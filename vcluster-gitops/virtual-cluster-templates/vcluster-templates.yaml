@@ -48,7 +48,7 @@ spec:
           chart:
             name: vcluster
             repo: https://loft-demos.github.io/vcluster-charts
-            version: 0.22.3
+            version: 0.23.0
           values: |
             external:
               platform:
@@ -96,7 +96,7 @@ spec:
                     cpu: 1
                 image:
                   repository: "loft-demos/vcluster-pro"
-                  tag: "0.22.4-k8s.{{ .Values.k8sVersion }}"
+                  tag: "0.24.0-rc.1-k8s.{{ .Values.k8sVersion }}"
                 persistence:
                   volumeClaim:
                     storageClass: "standard-rwo"
